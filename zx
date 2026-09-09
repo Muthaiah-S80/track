@@ -1,0 +1,6 @@
+$p1 = [System.IO.File]::ReadAllBytes("part1.bin")
+$p2 = [System.IO.File]::ReadAllBytes("part2.bin")
+$p3 = [System.IO.File]::ReadAllBytes("part3.bin")
+$p4 = [System.IO.File]::ReadAllBytes("part4.bin")
+$combined = $p1 + $p2 + $p3 + $p4
+[System.IO.File]::WriteAllBytes("2400536_SBA_GitHubCopilot_MuthaiahSubbiah.docx", $combined)
